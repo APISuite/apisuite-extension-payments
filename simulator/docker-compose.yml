@@ -1,0 +1,11 @@
+version: "3.7"
+services:
+  cropsar_simulator:
+    image: "node:12.16-alpine"
+    user: "node"
+    working_dir: /home/node/app
+    environment:
+      - NODE_ENV=production
+    volumes:
+      - ./:/home/node/app
+    command: "node index"
