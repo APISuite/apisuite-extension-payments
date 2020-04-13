@@ -1,11 +1,11 @@
 {
-  "name": "cropsar",
+  "name": "payments",
   "version": "1.0.0",
   "components": [
     {
       "type": "docker-compose",
-      "name": "simulator",
-      "path": "simulator"
+      "name": "http-server",
+      "path": "."
     }
   ]
 }

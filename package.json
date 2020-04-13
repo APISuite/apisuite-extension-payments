@@ -1,7 +1,7 @@
 {
-  "name": "cropsar-simulator",
+  "name": "apisuite-extension-payment",
   "version": "1.0.0",
-  "description": "A simulator for the CropSAR cost calculation tool",
+  "description": "The APISuite Extension that handles payment and charging related features.",
   "main": "index.js",
   "scripts": {
     "test": "true"
@@ -16,7 +16,8 @@
     "hapi-swagger": "^12.1.3",
     "node-fetch": "^2.6.0",
     "pino": "^5.17.0",
-    "pino-noir": "^2.2.1"
+    "pino-noir": "^2.2.1",
+    "stripe": "^8.39.2"
   },
   "author": "",
   "license": "UNLICENSED"

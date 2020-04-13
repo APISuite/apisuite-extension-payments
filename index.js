@@ -3,7 +3,7 @@ const rmeRegistry = require("./lib/request-middleware-engine-registry");
 const log = require("./lib/helpers/log");
 const config = require("./config");
 
-log.fatal("##### APISuite CropSAR Extension Started #####");
+log.fatal("##### APISuite Payments Extension Started #####");
 
 (async () => {
   try {
@@ -12,7 +12,7 @@ log.fatal("##### APISuite CropSAR Extension Started #####");
     const serverInstance = await server.init(config);
     await serverInstance.start();
   } catch (err) {
-    log.fatal(err, "Could not start APISuite CropSAR Extension. Exiting.");
+    log.fatal(err, "Could not start APISuite Payments Extension. Exiting.");
     process.exit(1);
   }
 })();

@@ -1,0 +1,21 @@
+{
+  "customers": [
+    {
+      "id": "1",
+      "meEndpoint": "https://sso.example.com/me",
+      "stripeSecretKey": "sk_test_abcd",
+      "stripeMode": "test"
+    }
+  ],
+  "interceptors": [
+    {
+      "interceptorKey": "upload-interceptor-price-calculator",
+      "targetMethod": "GET",
+      "targetHost": "api-dev.apisuite.cloudoki.com:8000",
+      "targetUri": "/users",
+      "consumerGroup": "payment-interceptor",
+      "type": "calc-request-price",
+      "customerId": "1"
+    }
+  ]
+}
