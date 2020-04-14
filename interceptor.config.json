@@ -14,8 +14,9 @@
       "targetHost": "api-dev.apisuite.cloudoki.com:8000",
       "targetUri": "/users",
       "consumerGroup": "payment-interceptor",
-      "type": "calc-request-price",
-      "customerId": "1"
+      "type": "calc-request-cost",
+      "customerId": "1",
+      "costCalculatorUrl": "https://example.com/v1/cost-calculator"
     }
   ]
 }
