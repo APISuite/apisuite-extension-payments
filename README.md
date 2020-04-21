@@ -10,3 +10,6 @@ The goal of this Extension is to "easily" plug something in-between the data flo
 
 For more information, see the Extension's PoC documentation in [Confluence](https://cloudoki.atlassian.net/wiki/spaces/ESA/pages/141590537/CropSAR+POC).
 
+## REST API
+
+The REST API's swagger UI documentation is available at the `/documentation` endpoint, if enabled in the configuration.
