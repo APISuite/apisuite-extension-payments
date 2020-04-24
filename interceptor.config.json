@@ -9,7 +9,7 @@
   ],
   "interceptors": [
     {
-      "interceptorKey": "upload-interceptor-price-calculator",
+      "interceptorKey": "upload-interceptor-cost-calculator",
       "targetMethod": "GET",
       "targetHost": "api-dev.apisuite.cloudoki.com:8000",
       "targetUri": "/users",

@@ -12,8 +12,7 @@ services:
     ports:
       - ${APISUITE_EXT_PAYMENTS_PORT:-3003}:3003
     volumes:
-      - ./:/home/node/app
-      - ${INTERCEPTOR_CONFIG_PATH:-./interceptor.config.json}:/home/node/app/interceptor.config.json
+      - ${INTERCEPTOR_CONFIG_PATH:-./interceptor.config.json}:/usr/src/app/interceptor.config.json
 networks:
   default:
     external:
