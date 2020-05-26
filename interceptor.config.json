@@ -4,7 +4,11 @@
       "id": "1",
       "meEndpoint": "https://sso.example.com/me",
       "stripeSecretKey": "sk_test_abcd",
-      "stripeMode": "test"
+      "stripeMode": "test",
+      "jwtX5cKey": "some-jwt-x5c-key",
+      "userCustomerMap": {
+        "oauth_user_email@example.com": "stripe_customer_id"
+      }
     }
   ],
   "interceptors": [
@@ -16,7 +20,19 @@
       "consumerGroup": "payment-interceptor",
       "type": "calc-request-cost",
       "customerId": "1",
-      "costCalculatorUrl": "https://example.com/v1/cost-calculator"
+      "auth": false,
+      "costCalculatorUrl": "http://cropsar-simulator.cloudoki.com/v1/cost-calculator"
+    },
+    {
+      "interceptorKey": "upload-interceptor-cost-charger",
+      "targetMethod": "GET",
+      "targetHost": "api-dev.apisuite.cloudoki.com:8000",
+      "targetUri": "/users/register",
+      "consumerGroup": "payment-interceptor",
+      "type": "charge-request-cost",
+      "customerId": "1",
+      "auth": true,
+      "costCalculatorUrl": "http://cropsar-simulator.cloudoki.com/v1/cost-calculator"
     }
   ]
 }
