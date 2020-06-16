@@ -3,6 +3,7 @@ services:
   extension_payments:
     build: .
     user: "node"
+    container_name: apisuite-extension-payments
     environment:
       - NODE_ENV=production
       - APISUITE_EXT_PAYMENTS_PUBLIC_URL
