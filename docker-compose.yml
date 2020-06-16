@@ -16,4 +16,4 @@ services:
 networks:
   default:
     external:
-      name: apisuitedb-net-${ENV}
+      name: apisuite-net
